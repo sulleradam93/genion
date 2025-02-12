@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-container {
+	border: 1px solid #ccc;
+	max-height: 200px;
+	overflow-y: auto;
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: white;
+	z-index: 10;
+}
+
+.list-item {
+	padding: 8px;
+	cursor: pointer;
+	display: block;
+}
+
+.list-item:hover {
+	background: #f0f0f0;
+}
+
+.autocomplete-group {
+	position: relative;
+}
+
+.danger {
+    border-color: #dc3545; 
+    background-color: #fff3f4;
+}
+
+.danger-message {
+    display: none;
+}
+
+.form-control.danger + .danger-message {
+    display: block;
+}
+
+.action-button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-button i {
+    font-size: 9px;
+}
