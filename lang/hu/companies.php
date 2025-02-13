@@ -25,7 +25,7 @@ return [
     ],
     'create' => [
 		'companies' 			=> 'Vállalatok',
-		'edit_company' 			=> 'Vállalat szerkesztése',
+		'edit_company' 			=> 'Vállalat létrehozása',
 		'name' 					=> 'Név',
 		'email' 				=> 'Email',
 		'phone' 				=> 'Telefon',
