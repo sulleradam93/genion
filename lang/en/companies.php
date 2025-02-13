@@ -25,7 +25,7 @@ return [
     ],
     'create' => [
 		'companies' 			=> 'Companies',
-		'edit_company' 			=> 'Edit Company',
+		'edit_company' 			=> 'Add New Company',
 		'name' 					=> 'Name',
 		'email' 				=> 'Email',
 		'phone' 				=> 'Phone',
