@@ -60,9 +60,9 @@ class CompanyJobController extends Controller
         $request->validate([
             'company_id' => 'required|exists:companies,id',
             'job_id' => 'required|exists:job_positions,id',
-            'base_salary' => 'required|integer|max:11',
-            'night_salary' => 'nullable|integer|max:11',
-            'weekend_salary' => 'nullable|integer|max:11',
+            'base_salary' => 'required|integer|min:0|max:99999999999',
+            'night_salary' => 'nullable|integer|max:99999999999',
+            'weekend_salary' => 'nullable|integer|max:99999999999',
         ]);
 
         if(empty($request->night_salary)){
@@ -103,7 +103,7 @@ class CompanyJobController extends Controller
         $request->validate([
             'company_id' => 'required|exists:companies,id',
             'job_id' => 'required|exists:job_positions,id',
-            'base_salary' => 'required|integer|max:99999999999',
+            'base_salary' => 'required|integer|min:0|max:99999999999',
             'night_salary' => 'required|integer|max:99999999999',
             'weekend_salary' => 'required|integer|max:99999999999',
         ]);
